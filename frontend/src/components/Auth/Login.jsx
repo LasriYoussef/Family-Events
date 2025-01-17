@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import axios from 'axios';
 import './Auth.css'; // Styles pour la page d'authentification
 
@@ -48,6 +49,9 @@ const Login = ({ onSwitchToRegister }) => {
       </p>
     </div>
   );
+};
+Login.propTypes = {
+  onSwitchToRegister: PropTypes.func.isRequired,
 };
 
 export default Login;

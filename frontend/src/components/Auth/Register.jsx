@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import axios from 'axios';
 import './Auth.css'; // Styles pour la page d'authentification
 
@@ -71,7 +72,7 @@ const Register = ({ onSwitchToLogin }) => {
           onChange={handleChange} 
           required 
         />
-        <button type="submit">S'inscrire</button>
+        <button type="submit">S&apos;inscrire</button>
       </form>
       <p>
         Déjà un compte ?{' '}
@@ -79,6 +80,9 @@ const Register = ({ onSwitchToLogin }) => {
       </p>
     </div>
   );
+};
+Register.propTypes = {
+  onSwitchToLogin: PropTypes.func.isRequired,
 };
 
 export default Register;

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
 
@@ -18,7 +18,7 @@ const Home = () => {
       <h1>Bienvenue sur Family-Event</h1>
       <p>Connectez-vous pour accéder à vos événements et discussions.</p>
       <button className="btn-primary" onClick={() => navigate('/auth')}>
-        Se connecter ou s'inscrire
+       Se connecter ou s&apos;inscrire
       </button>
     </div>
   );

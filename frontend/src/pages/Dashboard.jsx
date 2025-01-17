@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './Dashboard.css';
@@ -31,16 +31,20 @@ const Dashboard = () => {
       <h2>Tableau de bord</h2>
       {loading ? (
         <p>Chargement...</p>
-      ) : events.length > 0 ? (
-        <ul>
-          {events.map((event) => (
-            <li key={event.id}>
-              {event.title} - {new Date(event.date).toLocaleDateString()}
-            </li>
-          ))}
-        </ul>
       ) : (
-        <p>Aucun événement à venir.</p>
+        <>
+          {events.length > 0 ? (
+            <ul>
+              {events.map((event) => (
+                <li key={event.id}>
+                  {event.title} - {new Date(event.date).toLocaleDateString()}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>Aucun événement à venir.</p>
+          )}
+        </>
       )}
       <div className="dashboard-actions">
         <Link to="/calendar">
