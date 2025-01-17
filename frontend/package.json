@@ -1,5 +1,5 @@
 {
-  "name": "family-event-frontend",
+  "name": "frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "family-event-frontend": "file:",
+    "frontend": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
