@@ -1,5 +1,5 @@
 import  { useEffect, useState } from 'react';
-import { fetchNotifications, markAsRead } from '../../services/notificationService';
+import { fetchNotifications, markAsRead } from '../services/NotificationService';
 
 const TestNotifications = () => {
   const [notifications, setNotifications] = useState([]);

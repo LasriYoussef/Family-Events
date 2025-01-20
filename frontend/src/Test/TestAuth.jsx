@@ -1,5 +1,5 @@
 import 'react';
-import { login, register } from '../../services/authService';
+import { login, register } from '../services/authService';
 
 const TestAuth = () => {
   const handleLogin = async () => {

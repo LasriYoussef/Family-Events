@@ -1,21 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Dashboard from './pages/Dashboard';
-import Friends from './pages/Friends';
-import AuthPage from './components/AuthPage';
-import NotFound from './pages/NotFound';
+import 'react';
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/friends" element={<Friends />} />
-        <Route path="/auth" element={<AuthPage />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Router>
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <h1>Bienvenue sur Family-Event</h1>
+      <p>Votre application fonctionne correctement !</p>
+    </div>
   );
 };
 

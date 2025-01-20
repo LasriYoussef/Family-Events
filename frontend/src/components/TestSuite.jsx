@@ -1,5 +1,5 @@
 import 'react';
-import TestSuite from './test/TestSuite';
+import TestSuite from '../Test/TestSuite';
 
 const App = () => {
   return <TestSuite />;

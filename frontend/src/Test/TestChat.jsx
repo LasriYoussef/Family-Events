@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import { fetchMessages, sendMessage } from '../../services/chatService';
+import { fetchMessages, sendMessage } from '../services/chatService';
 
 const TestChat = () => {
   const [messages, setMessages] = useState([]);
