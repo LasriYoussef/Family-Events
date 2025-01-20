@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Friends from './pages/Friends';
-import AuthPage from './components/Auth/AuthPage';
+import AuthPage from './components/AuthPage';
 import NotFound from './pages/NotFound';
 
 const App = () => {

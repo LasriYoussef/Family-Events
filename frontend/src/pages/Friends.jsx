@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Friends.css';
+// import './styles/Friends.css';
 
 const Friends = () => {
   const [friends, setFriends] = useState([]);

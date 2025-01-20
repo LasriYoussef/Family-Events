@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import './Dashboard.css';
+// import '../styles/Dashboard.css';
 
 const Dashboard = () => {
   const [events, setEvents] = useState([]);

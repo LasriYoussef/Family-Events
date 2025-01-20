@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
-import './Auth.css'; // Styles pour la page d'authentification
+import '../styles/Auth.css'; // Styles pour la page d'authentification
 
 const Register = ({ onSwitchToLogin }) => {
   const [formData, setFormData] = useState({
